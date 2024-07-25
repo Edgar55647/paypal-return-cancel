@@ -3,11 +3,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pago Exitoso</title>
-    <meta http-equiv="refresh" content="5;url=miapp://order"> <!-- Redirige después de 5 segundos -->
+  <title>Pago Exitoso</title>
+  <script type="text/javascript">
+    function redirect() {
+      window.location.href = "yourapp://payment_success";
+    }
+    window.onload = redirect;
+  </script>
 </head>
 <body>
-    <h1>Pago Exitoso</h1>
-    <p>Gracias por tu compra. Serás redirigido a la aplicación en breve...</p>
+  <h1>¡Pago Exitoso!</h1>
+  <p>Redirigiendo a la aplicación...</p>
 </body>
 </html>
