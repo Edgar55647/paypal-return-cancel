@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Pago Exitoso</title>
-  <script type="text/javascript">
-    function redirect() {
-      window.location.href = "yourapp://paypal-return-cancel/return"; // URL de redirección personalizada
-    }
-    window.onload = redirect;
-  </script>
+    <title>Pago Exitoso</title>
+    <meta http-equiv="refresh" content="0;url=myapp://success" />
 </head>
 <body>
-  <h1>¡Pago Exitoso!</h1>
-  <p>Redirigiendo a la aplicación...</p>
+    <h1>Pago Exitoso</h1>
+    <p>Gracias por tu compra. Si no eres redirigido automáticamente, <a href="myapp://success">haz clic aquí</a>.</p>
 </body>
 </html>
