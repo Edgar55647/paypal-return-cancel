@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pago Exitoso</title>
-   
+  <meta http-equiv="refresh" content="0; url=myapp://paypal/return" />
+  <script type="text/javascript">
+    // JavaScript fallback for older browsers
+    window.onload = function() {
+      window.location.href = "myapp://paypal/return";
+    }
+  </script>
 </head>
 <body>
-    <h1>Pago Exitosoooooooo</h1>
-   
+  <p>If you are not redirected automatically, follow this <a href="myapp://paypal/return">link</a>.</p>
 </body>
 </html>
